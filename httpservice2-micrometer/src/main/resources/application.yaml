@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: "http-service2"
+
+server:
+  port: 8081
+
+whatthecommit:
+  url: "https://whatthecommit.com/index.txt"
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      produce: B3
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces
+    metrics:
+      export:
+        enabled: false
+  endpoints:
+    web:
+      exposure:
+        # include: health,info,prometheus
+        include: "*"

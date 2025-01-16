@@ -1,3 +1,6 @@
+*_Forked from https://github.com/xsreality/spring-boot-tracing-demo_*
+
+
 ## Observability of HTTP services with Micrometer Tracing
 
 ![image](https://user-images.githubusercontent.com/4991449/140835345-a2af5646-2488-456d-9296-7baa21b06028.png)
@@ -28,4 +31,4 @@ curl http://localhost:8080
 
 Open Jaeger at `http://localhost:16686` and check the traces.
 
-![image](https://github.com/xsreality/spring-boot-tracing-demo/assets/4991449/e72b4f61-f53e-41ee-a436-fe5536a0d3ab)
+![image](assets/jaeger-sample.png)

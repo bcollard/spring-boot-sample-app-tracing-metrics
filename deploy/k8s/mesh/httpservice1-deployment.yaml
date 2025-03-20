@@ -24,7 +24,7 @@ spec:
       containers:
         - env:
             - name: HTTPSERVICE2_ENDPOINT
-              value: http://httpservice2.default.svc:8081
+              value: http://httpservice2.demo.svc:8081
             - name: MANAGEMENT_OTLP_TRACING_ENDPOINT
               value: http://172.18.1.3:4318/v1/traces
             - name: MANAGEMENT_ZIPKIN_TRACING_ENDPOINT

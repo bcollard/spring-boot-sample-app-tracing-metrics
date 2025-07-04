@@ -41,3 +41,4 @@ deploy-no-mesh: ## install on the current k8s cluster without the service mesh
 	@kubectl apply -f deploy/k8s/no-mesh/httpservice2-deployment.yaml
 	@kubectl apply -f deploy/k8s/no-mesh/httpservice1-service.yaml
 	@kubectl apply -f deploy/k8s/no-mesh/httpservice2-service.yaml
+

@@ -1,0 +1,15 @@
+[Unit]
+Description=Spring Boot HTTP Service 2
+After=network.target
+
+[Service]
+User=spring
+WorkingDirectory=/opt/httpservice2-micrometer
+ExecStart=/usr/bin/java -jar /opt/httpservice2-micrometer/httpservice2-micrometer.jar
+EnvironmentFile=-/etc/httpservice2-micrometer.env
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
